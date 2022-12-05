@@ -16,3 +16,6 @@ li{
     list-style-type: square;
 }
 
+ol > li{ /*Select all List Elements that are children of Organized List elements*/
+    list-style-type:decimal; 
+}
