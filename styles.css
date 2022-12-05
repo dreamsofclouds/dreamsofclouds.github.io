@@ -13,5 +13,6 @@ p{
 
 li{
     color:black;
+    list-style-type: square;
 }
 

@@ -23,6 +23,8 @@ section:hover div {
     margin-left:500px;
 }
 
+section:
+
 div:nth-of-type(1){
     transition-timing-function: ease-in;
 }
