@@ -1,21 +1,53 @@
 h1,h2{
     font:bold;
-    color: #393E46;
-}
-
-body{
-    color: #EEEEEE;
+    color: #22B455;
 }
 
 p{
-    color: #222831;
+    color: #22B455;
 }
 
 li{
-    color:black;
+    color:#80CE87;
     list-style-type: square;
 }
 
 ol > li{ /*Select all List Elements that are children of Organized List elements*/
     list-style-type:decimal; 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #151b29;
+    padding:2vh;
+}
+
+button{
+    background: none;
+    color: #22B455;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all 0.25s;
+}
+
+button:hover{
+    border-color: #22B455;
+    color: #92E5A1;
+    box-shadow: 0 0.5em 0.5em -0.4em #92E5A1;
+    transform: translateY(-0.25em);
+    cursor: crosshair;
+}
+
+ a, a:visited{
+    transition: all 0.25s;
+    color: #22B455;  
+}
+
+a:hover{
+    border-color: #22B455;
+    color: #92E5A1;
+    box-shadow: 0 0.5em 0.5em -0.4em #92E5A1;
+    transform: translateY(-0.25em);
+    cursor: crosshair;
 }

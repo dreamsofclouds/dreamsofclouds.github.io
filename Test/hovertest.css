@@ -9,11 +9,11 @@ body{
 
 button{
     background: none;
-    color: #ffa260;
+    color: #22B455;
     border: 2px solid;
     padding: 1em 2em;
     font-size: 1em;
-    transition: all 1.7s;
+    transition: all 0.25s;
 }
 
 button:hover{
