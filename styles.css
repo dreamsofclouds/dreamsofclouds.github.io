@@ -1,28 +1,30 @@
-h1,h2{
-    font:bold;
+h1,
+h2 {
+    font: bold;
     color: #22B455;
 }
 
-p{
+p {
     color: #22B455;
 }
 
-li{
-    color:#80CE87;
+li {
+    color: #80CE87;
     list-style-type: square;
 }
 
-ol > li{ /*Select all List Elements that are children of Organized List elements*/
-    list-style-type:decimal; 
+ol>li {
+    /*Select all List Elements that are children of Organized List elements*/
+    list-style-type: decimal;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #151b29;
-    padding:2vh;
+    padding: 2vh;
 }
 
-button{
+button {
     background: none;
     color: #22B455;
     border: 2px solid;
@@ -31,7 +33,7 @@ button{
     transition: all 0.25s;
 }
 
-button:hover{
+button:hover {
     border-color: #22B455;
     color: #92E5A1;
     box-shadow: 0 0.5em 0.5em -0.4em #92E5A1;
@@ -39,15 +41,28 @@ button:hover{
     cursor: crosshair;
 }
 
- a, a:visited{
+a,
+a:visited {
     transition: all 0.25s;
-    color: #22B455;  
+    color: #22B455;
 }
 
-a:hover{
+a:hover {
     border-color: #22B455;
     color: #92E5A1;
     box-shadow: 0 0.5em 0.5em -0.4em #92E5A1;
     transform: translateY(-0.25em);
     cursor: crosshair;
+}
+
+div {
+    max-width: 30%;
+    margin: calc(10%/6);
+    display: inline-block;
+    vertical-align: top;
+}
+
+#text {
+    display: inline-block;
+    vertical-align: top;
 }
