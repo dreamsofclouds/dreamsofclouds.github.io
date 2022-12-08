@@ -6,6 +6,7 @@
     border-width: 1px;
     text-align:center;
     border-radius: 15px;
+    /* overflow:auto; */
 }
 
 img{
@@ -16,3 +17,4 @@ img{
     border-width:5px;
     border-radius: 50%;
 }
+
