@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 h1,
 h2 {
     font: bold;
@@ -55,14 +59,30 @@ a:hover {
     cursor: crosshair;
 }
 
-div {
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    /*
     max-width: 30%;
     margin: calc(10%/6);
+    display: inline-block;
+    vertical-align: top;*/
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row:after #text {
     display: inline-block;
     vertical-align: top;
 }
 
-#text {
-    display: inline-block;
-    vertical-align: top;
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
