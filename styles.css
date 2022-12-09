@@ -88,24 +88,3 @@ a:hover {
         width: 100%;
     }
 }
-
- 
-.card{
-    padding: 10px;
-    max-height:50%;
-    border-style: solid;
-    border-color:grey;
-    border-width: 1px;
-    text-align:center;
-    border-radius: 15px;
-    overflow:auto;
-}
-
-img{
-    max-height: 55%;
-    max-width: 55%;
-    border-color:rgb(63, 33, 129);
-    border-style: solid;
-    border-width:5px;
-    border-radius: 50%;
-}
