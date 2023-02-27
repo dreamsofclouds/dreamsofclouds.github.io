@@ -21,3 +21,4 @@ function setTimer(elem_id, date) {
        }
     setTimer("countdown1","April 13, 2023");
     setTimer("countdown2","May 15, 2023");
+    setTimer("countdown3","June 03, 2023");
