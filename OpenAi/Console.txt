@@ -1,0 +1,472 @@
+Microsoft Windows [Version 10.0.19044.2604]
+(c) Microsoft Corporation. Alle Rechte vorbehalten.
+
+C:\Users\dlaiton>pip install openai
+Collecting openai
+  Downloading openai-0.26.5.tar.gz (55 kB)
+     ---------------------------------------- 55.5/55.5 KB 2.8 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: requests>=2.20 in c:\users\dlaiton\appdata\local\programs\python\python38\lib\site-packages (from openai) (2.27.1)
+Collecting aiohttp
+  Downloading aiohttp-3.8.4-cp38-cp38-win_amd64.whl (324 kB)
+     ---------------------------------------- 324.5/324.5 KB 10.1 MB/s eta 0:00:00
+Collecting tqdm
+  Downloading tqdm-4.64.1-py2.py3-none-any.whl (78 kB)
+     ---------------------------------------- 78.5/78.5 KB 4.5 MB/s eta 0:00:00
+Requirement already satisfied: idna<4,>=2.5 in c:\users\dlaiton\appdata\local\programs\python\python38\lib\site-packages (from requests>=2.20->openai) (3.3)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\users\dlaiton\appdata\local\programs\python\python38\lib\site-packages (from requests>=2.20->openai) (2.0.12)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\users\dlaiton\appdata\local\programs\python\python38\lib\site-packages (from requests>=2.20->openai) (1.26.8)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\dlaiton\appdata\local\programs\python\python38\lib\site-packages (from requests>=2.20->openai) (2021.10.8)
+Collecting yarl<2.0,>=1.0
+  Downloading yarl-1.8.2-cp38-cp38-win_amd64.whl (56 kB)
+     ---------------------------------------- 56.9/56.9 KB 3.1 MB/s eta 0:00:00
+Collecting multidict<7.0,>=4.5
+  Downloading multidict-6.0.4-cp38-cp38-win_amd64.whl (28 kB)
+Collecting async-timeout<5.0,>=4.0.0a3
+  Downloading async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
+Collecting frozenlist>=1.1.1
+  Downloading frozenlist-1.3.3-cp38-cp38-win_amd64.whl (34 kB)
+Collecting aiosignal>=1.1.2
+  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Collecting attrs>=17.3.0
+  Downloading attrs-22.2.0-py3-none-any.whl (60 kB)
+     ---------------------------------------- 60.0/60.0 KB 3.3 MB/s eta 0:00:00
+Collecting colorama
+  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Building wheels for collected packages: openai
+  Building wheel for openai (pyproject.toml) ... done
+  Created wheel for openai: filename=openai-0.26.5-py3-none-any.whl size=67643 sha256=7038ecbe101578f740fec6333c2edd6993878f66178f6a6ad12bbd79365971e5
+  Stored in directory: c:\users\dlaiton\appdata\local\pip\cache\wheels\a7\47\99\8273a59fbd59c303e8ff175416d5c1c9c03a2e83ebf7525a99
+Successfully built openai
+Installing collected packages: multidict, frozenlist, colorama, attrs, async-timeout, yarl, tqdm, aiosignal, aiohttp, openai
+Successfully installed aiohttp-3.8.4 aiosignal-1.3.1 async-timeout-4.0.2 attrs-22.2.0 colorama-0.4.6 frozenlist-1.3.3 multidict-6.0.4 openai-0.26.5 tqdm-4.64.1 yarl-1.8.2
+WARNING: You are using pip version 22.0.3; however, version 23.0.1 is available.
+You should consider upgrading via the 'c:\users\dlaiton\appdata\local\programs\python\python38\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\dlaiton>upgrade pip
+Der Befehl "upgrade" ist entweder falsch geschrieben oder
+konnte nicht gefunden werden.
+
+C:\Users\dlaiton>c:\users\dlaiton\appdata\local\programs\python\python38\python.exe -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\dlaiton\appdata\local\programs\python\python38\lib\site-packages (22.0.3)
+Collecting pip
+  Downloading pip-23.0.1-py3-none-any.whl (2.1 MB)
+     ---------------------------------------- 2.1/2.1 MB 16.4 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.0.3
+    Uninstalling pip-22.0.3:
+      Successfully uninstalled pip-22.0.3
+Successfully installed pip-23.0.1
+
+C:\Users\dlaiton>openai
+usage: openai [-h] [-v] [-b API_BASE] [-k API_KEY] [-o ORGANIZATION] {api,tools,wandb} ...
+
+positional arguments:
+  {api,tools,wandb}
+    api                 Direct API calls
+    tools               Client side tools for convenience
+    wandb               Logging with Weights & Biases
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --verbose         Set verbosity.
+  -b API_BASE, --api-base API_BASE
+                        What API base url to use.
+  -k API_KEY, --api-key API_KEY
+                        What API key to use.
+  -o ORGANIZATION, --organization ORGANIZATION
+                        Which organization to run as (will use your default organization if not specified)
+
+C:\Users\dlaiton>dir /Documents/
+Parameterformat nicht ordnungsgemäß - "Documents".
+
+C:\Users\dlaiton>dir /Dokumente/
+Parameterformat nicht ordnungsgemäß - "Dokumente".
+
+C:\Users\dlaiton>cd /Documents
+Das System kann den angegebenen Pfad nicht finden.
+
+C:\Users\dlaiton>dir
+ Volume in Laufwerk C: hat keine Bezeichnung.
+ Volumeseriennummer: 2A40-0AAE
+
+ Verzeichnis von C:\Users\dlaiton
+
+02.02.2023  16:10    <DIR>          .
+02.02.2023  16:10    <DIR>          ..
+08.04.2022  15:35    <DIR>          .1password
+13.04.2021  12:35    <DIR>          .android
+09.05.2022  17:08    <DIR>          .atom
+19.12.2022  15:01               660 .bash_history
+24.06.2021  12:08    <DIR>          .cisco
+13.05.2020  10:18    <DIR>          .config
+21.09.2022  09:31    <DIR>          .dbus-keyrings
+13.05.2020  07:56    <DIR>          .dotnet
+19.12.2022  14:59               231 .gitconfig
+25.02.2022  14:15    <DIR>          .idlerc
+20.06.2022  10:25    <DIR>          .ms-ad
+23.11.2020  10:12    <DIR>          .ssh
+14.06.2021  08:58    <DIR>          .swt
+28.02.2023  10:29    <DIR>          .VirtualBox
+03.06.2020  08:11    <DIR>          .vscode
+22.10.2021  08:21    <DIR>          3D Objects
+22.10.2021  08:21    <DIR>          Contacts
+28.02.2023  08:26    <DIR>          Desktop
+28.02.2023  08:59    <DIR>          Documents
+28.02.2023  11:02    <DIR>          Downloads
+22.10.2021  08:21    <DIR>          Favorites
+13.05.2021  18:54    <DIR>          Games
+26.05.2021  11:03    <DIR>          Google Drive
+22.10.2021  08:21    <DIR>          Links
+15.10.2021  08:49         2.478.080 logbuch.db3
+16.02.2023  15:51    <DIR>          Music
+09.08.2021  08:51    <DIR>          OneDrive
+30.08.2022  16:23             4.261 photorec.cfg
+25.01.2023  12:52    <DIR>          Pictures
+26.03.2020  07:50    <DIR>          Roaming
+22.10.2021  08:21    <DIR>          Saved Games
+22.10.2021  08:21    <DIR>          Searches
+13.05.2020  10:16    <DIR>          source
+08.03.2022  16:41    <DIR>          Videos
+22.02.2023  10:11    <DIR>          VirtualBox VMs
+               4 Datei(en),      2.483.232 Bytes
+              33 Verzeichnis(se), 266.325.270.528 Bytes frei
+
+C:\Users\dlaiton>cd /Documents
+Das System kann den angegebenen Pfad nicht finden.
+
+C:\Users\dlaiton>cd Documents
+
+C:\Users\dlaiton\Documents>dir
+ Volume in Laufwerk C: hat keine Bezeichnung.
+ Volumeseriennummer: 2A40-0AAE
+
+ Verzeichnis von C:\Users\dlaiton\Documents
+
+28.02.2023  08:59    <DIR>          .
+28.02.2023  08:59    <DIR>          ..
+07.04.2022  17:04         1.926.622 2022-04-07 Betriebsvereinbarung mobile work @home.pdf
+09.02.2023  11:57           741.772 20230209_113701_resized.jpg
+02.02.2023  16:06           117.521 acm_log.202302021606
+02.02.2023  16:06             9.102 acm_log.202302021606.bz2
+02.02.2023  07:30           101.554 AK0333_TVST_NETI_002_010_2895-acm_log.202302020719
+02.02.2023  07:30             8.678 AK0333_TVST_NETI_002_010_2895-acm_log.202302020719.bz2
+23.02.2023  14:20    <DIR>          ariskonfigtools
+28.11.2022  08:14    <DIR>          Benutzerdefinierte Office-Vorlagen
+28.02.2023  11:07    <DIR>          Dokumente
+31.08.2022  10:01     2.039.667.754 drive-download-20220831T084356Z-001.zip
+31.08.2022  10:00        68.817.178 drive-download-20220831T084356Z-002.zip
+14.02.2023  13:42           137.192 E-mail Banner ISO 27001.png
+20.02.2023  11:51           390.941 Emil E-mail 18.02.2023 Deutsch.pdf
+20.02.2023  11:55            32.714 Emil E-mail 18.02.2023 Englisch.pdf
+30.01.2023  10:53    <DIR>          Garde
+23.02.2023  14:37    <DIR>          Git
+23.11.2022  11:35    <DIR>          GitHub
+02.01.2023  11:41    <DIR>          Handbuch
+08.07.2021  12:35             2.463 Hotline2020_114.xls - Verknüpfung.lnk
+17.01.2023  12:50            49.546 Jornal Blueprint.docx
+20.02.2023  14:22         2.177.006 Kommunikation.pdf
+30.01.2023  13:36    <DIR>          kt0325
+30.01.2023  13:36    <DIR>          kt0332
+30.01.2023  11:12           135.175 Parameter BBS.jpg
+14.10.2022  10:13    <DIR>          Projekte
+10.02.2023  14:55            18.123 QRCodes-Test.docx
+17.01.2023  15:07    <DIR>          STI
+26.01.2023  13:57           212.519 sts_personal.x10
+14.10.2022  10:13    <DIR>          Tools
+27.02.2023  16:28            43.556 TVLG-3993-0-24-STWE-AK03xx-20230227162837.sb1
+17.01.2023  10:18         1.904.394 VBB Layoute Aufbau POS - Info Preine.pdf
+              19 Datei(en),  2.116.493.810 Bytes
+              14 Verzeichnis(se), 266.324.885.504 Bytes frei
+
+C:\Users\dlaiton\Documents>cd Dokumente
+
+C:\Users\dlaiton\Documents\Dokumente>cd OpenAI
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>dir
+ Volume in Laufwerk C: hat keine Bezeichnung.
+ Volumeseriennummer: 2A40-0AAE
+
+ Verzeichnis von C:\Users\dlaiton\Documents\Dokumente\OpenAI
+
+28.02.2023  11:08    <DIR>          .
+28.02.2023  11:08    <DIR>          ..
+28.02.2023  11:12               311 Key.py
+               1 Datei(en),            311 Bytes
+               2 Verzeichnis(se), 266.323.849.216 Bytes frei
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python Key.py
+Traceback (most recent call last):
+  File "Key.py", line 7, in <module>
+    response = openai.Completion.create(model="text-davinci-003", prompt="Say this is a test", temperature=0, max_tokens=7)
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 149, in create
+    ) = cls.__prepare_create_request(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 106, in __prepare_create_request
+    requestor = api_requestor.APIRequestor(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_requestor.py", line 130, in __init__
+    self.api_key = key or util.default_api_key()
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\util.py", line 186, in default_api_key
+    raise openai.error.AuthenticationError(
+openai.error.AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://onboard.openai.com for details, or email support@openai.com if you have any questions.
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python Key.py
+Traceback (most recent call last):
+  File "Key.py", line 7, in <module>
+    response = openai.Completion.create(model="text-davinci-003", prompt="Say this is a test", temperature=0, max_tokens=7)
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 149, in create
+    ) = cls.__prepare_create_request(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 106, in __prepare_create_request
+    requestor = api_requestor.APIRequestor(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_requestor.py", line 130, in __init__
+    self.api_key = key or util.default_api_key()
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\util.py", line 186, in default_api_key
+    raise openai.error.AuthenticationError(
+openai.error.AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://onboard.openai.com for details, or email support@openai.com if you have any questions.
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python Key.py
+Traceback (most recent call last):
+  File "Key.py", line 5, in <module>
+    openai.api_key = os.getenv(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)
+NameError: name 'sk' is not defined
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>os.environ["OPENAI_API_KEY"]="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"
+Der Befehl "os.environ["OPENAI_API_KEY"]" ist entweder falsch geschrieben oder
+konnte nicht gefunden werden.
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>setx OPENAI_API_KEY "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"
+
+ERFOLGREICH: Angegebener Wert wurde gespeichert.
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python Key.py
+Traceback (most recent call last):
+  File "Key.py", line 7, in <module>
+    response = openai.Completion.create(model="text-davinci-003", prompt="Say this is a test", temperature=0, max_tokens=7)
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 149, in create
+    ) = cls.__prepare_create_request(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 106, in __prepare_create_request
+    requestor = api_requestor.APIRequestor(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_requestor.py", line 130, in __init__
+    self.api_key = key or util.default_api_key()
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\util.py", line 186, in default_api_key
+    raise openai.error.AuthenticationError(
+openai.error.AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://onboard.openai.com for details, or email support@openai.com if you have any questions.
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python Key.py
+Traceback (most recent call last):
+  File "Key.py", line 7, in <module>
+    response = openai.Completion.create(model="text-davinci-003", prompt="Say this is a test", temperature=0, max_tokens=7)
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 149, in create
+    ) = cls.__prepare_create_request(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\abstract\engine_api_resource.py", line 106, in __prepare_create_request
+    requestor = api_requestor.APIRequestor(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_requestor.py", line 130, in __init__
+    self.api_key = key or util.default_api_key()
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\util.py", line 186, in default_api_key
+    raise openai.error.AuthenticationError(
+openai.error.AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://onboard.openai.com for details, or email support@openai.com if you have any questions.
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python Key.py
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+Traceback (most recent call last):
+  File "generate.py", line 1, in <module>
+    response = openai.Image.create(
+NameError: name 'openai' is not defined
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+Traceback (most recent call last):
+  File "generate.py", line 3, in <module>
+    response = openai.Image.create(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\image.py", line 26, in create
+    requestor = api_requestor.APIRequestor(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_requestor.py", line 130, in __init__
+    self.api_key = key or util.default_api_key()
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\util.py", line 186, in default_api_key
+    raise openai.error.AuthenticationError(
+openai.error.AuthenticationError: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://onboard.openai.com for details, or email support@openai.com if you have any questions.
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-hZMgo9WkOfashsW7ijSn3IP0.png?st=2023-02-28T09%3A42%3A03Z&se=2023-02-28T11%3A42%3A03Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A40%3A01Z&ske=2023-02-28T21%3A40%3A01Z&sks=b&skv=2021-08-06&sig=TqqgRCkzTqnMr6ckfpGJCpra3rljxg791stG86iLwlQ%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-1NI2NsOMuBpU54nBkhHvNRBN.png?st=2023-02-28T09%3A42%3A53Z&se=2023-02-28T11%3A42%3A53Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A41%3A46Z&ske=2023-02-28T21%3A41%3A46Z&sks=b&skv=2021-08-06&sig=%2BZ2N08YaRoDePfbah0geUc0/ydlvHRnVc1bMEzvOEQM%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-qZRalHZGt4vTdseG6n9Vz5UP.png?st=2023-02-28T09%3A43%3A26Z&se=2023-02-28T11%3A43%3A26Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A40%3A56Z&ske=2023-02-28T21%3A40%3A56Z&sks=b&skv=2021-08-06&sig=WE0OX57INcQTmaQjsmEyroLeL9tOzTZsXijkEkflNJc%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-xf8eIwR5z10XvgYimL9lwSko.png?st=2023-02-28T09%3A44%3A19Z&se=2023-02-28T11%3A44%3A19Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A39%3A46Z&ske=2023-02-28T21%3A39%3A46Z&sks=b&skv=2021-08-06&sig=hrOotPYRTJ0omsA%2BmAol%2Bq9u6U8OZYdlkW5W5oZxBPc%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-SMdWe0k4OuLEx5rXHKw0KYCH.png?st=2023-02-28T09%3A45%3A09Z&se=2023-02-28T11%3A45%3A09Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A39%3A37Z&ske=2023-02-28T21%3A39%3A37Z&sks=b&skv=2021-08-06&sig=ZF5YuQ2%2BBEryIqhZrp6RkoH6GlDcdjvKSCfIhnDasVw%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-3qHYRFmSj8wkPtpTdCWSsX5Q.png?st=2023-02-28T10%3A51%3A17Z&se=2023-02-28T12%3A51%3A17Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A40%3A42Z&ske=2023-02-28T21%3A40%3A42Z&sks=b&skv=2021-08-06&sig=anQeTs82d%2B1YYH/KMTIsJUTdFO%2BFnGwMyFFWDuuG4o8%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-FZVFCcUCKyJQc7Vj5lGTJASp.png?st=2023-02-28T10%3A52%3A38Z&se=2023-02-28T12%3A52%3A38Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T11%3A33%3A27Z&ske=2023-03-01T11%3A33%3A27Z&sks=b&skv=2021-08-06&sig=VwssfWcu/tZ8N6ZK5YwIm5bOCuB0Ga4nVZccEoVprZk%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-G0vcf8pgF0VxlkR9fM2WTNu0.png?st=2023-02-28T11%3A01%3A27Z&se=2023-02-28T13%3A01%3A27Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T11%3A56%3A10Z&ske=2023-03-01T11%3A56%3A10Z&sks=b&skv=2021-08-06&sig=8IRnFt9066qhwuJ9Z4TrcPGbtX7IKMBxO3Z4NaUIWJQ%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-PzmeYIMYentsE4iYrFDXd25S.png?st=2023-02-28T11%3A02%3A04Z&se=2023-02-28T13%3A02%3A04Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T08%3A23%3A45Z&ske=2023-03-01T08%3A23%3A45Z&sks=b&skv=2021-08-06&sig=Q/5upv5%2Bre9RlxloYbKzFQtF0aVE8e5vhp8oeA3Zhg8%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-rqn4DFQiXlx5NhkqobhNsvpN.png?st=2023-02-28T11%3A02%3A47Z&se=2023-02-28T13%3A02%3A47Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A40%3A19Z&ske=2023-02-28T21%3A40%3A19Z&sks=b&skv=2021-08-06&sig=4%2Br7IqtelRd6xrDCJ/MBJzsSyB7N2WY0wNuSZTzGHj0%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-inrrLtVccXEbSPhQ6otRb6LD.png?st=2023-02-28T11%3A05%3A02Z&se=2023-02-28T13%3A05%3A02Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A40%3A53Z&ske=2023-02-28T21%3A40%3A53Z&sks=b&skv=2021-08-06&sig=E02k5Xl9V09dU1JWMHxfDFHhxXFQuJB8SJgEi3Y54zM%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-plyTDTch0NBonEl6pf4kszCP.png?st=2023-02-28T11%3A06%3A03Z&se=2023-02-28T13%3A06%3A03Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T08%3A39%3A32Z&ske=2023-03-01T08%3A39%3A32Z&sks=b&skv=2021-08-06&sig=gxm/ZM3mLCfTtZirym4Jfp/CzYn58xJDhq9zd3LM6fI%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-qPD5PKrNy1VZTDkzeZdqieVz.png?st=2023-02-28T11%3A07%3A15Z&se=2023-02-28T13%3A07%3A15Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T07%3A39%3A42Z&ske=2023-03-01T07%3A39%3A42Z&sks=b&skv=2021-08-06&sig=/aTcIH4AZ7LMDoPa8NFBNTFbVNRxK6yiX5UTp4XPbbc%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-LzxWN5euyG9cC6cAkWotRn4m.png?st=2023-02-28T11%3A09%3A28Z&se=2023-02-28T13%3A09%3A28Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A39%3A40Z&ske=2023-02-28T21%3A39%3A40Z&sks=b&skv=2021-08-06&sig=yMJSJl57DPbVEXscgvS3/NKh%2B7bYg35IC6Z2GsMX8Ks%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-4T0huyqBHg3TYwDHMQ4sYu60.png?st=2023-02-28T11%3A10%3A09Z&se=2023-02-28T13%3A10%3A09Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T02%3A37%3A06Z&ske=2023-03-01T02%3A37%3A06Z&sks=b&skv=2021-08-06&sig=cygzeDohi0dnICCMez1kvaGR5njFlceXNhDrGSz4jIc%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-IAJx2clet38PMpwekWgxJyMw.png?st=2023-02-28T11%3A12%3A29Z&se=2023-02-28T13%3A12%3A29Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T12%3A10%3A00Z&ske=2023-03-01T12%3A10%3A00Z&sks=b&skv=2021-08-06&sig=BS%2B2aRfeHVzuAGKv00S8Etc090IQ2O5VTa0f%2B61DdXw%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-5CO6t1KqMEKDaQfcuaUkQJyO.png?st=2023-02-28T11%3A13%3A18Z&se=2023-02-28T13%3A13%3A18Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T07%3A51%3A35Z&ske=2023-03-01T07%3A51%3A35Z&sks=b&skv=2021-08-06&sig=YHEI%2Bc91d4Erm2A3GZ963%2Bj7H2VO6UmbnbrhoeQJGFY%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-rlcvaXL7losaxEkZnQAHhBIu.png?st=2023-02-28T11%3A15%3A58Z&se=2023-02-28T13%3A15%3A58Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T12%3A13%3A23Z&ske=2023-03-01T12%3A13%3A23Z&sks=b&skv=2021-08-06&sig=DNpnOhXxjPQsls6m7uGTy9pO2FpfTIAvAz048Kakn3w%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-t1bzO7evxVeJ77A7SGJgRoH7.png?st=2023-02-28T11%3A16%3A17Z&se=2023-02-28T13%3A16%3A17Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T08%3A55%3A08Z&ske=2023-03-01T08%3A55%3A08Z&sks=b&skv=2021-08-06&sig=jSyBXzOu/fVf5CdxtqXJ3Lz6rBIkbwtNseBDrJbtOtU%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-OynYSgQx6QBFJ9RSnPGJp1SH.png?st=2023-02-28T11%3A17%3A13Z&se=2023-02-28T13%3A17%3A13Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T06%3A29%3A59Z&ske=2023-03-01T06%3A29%3A59Z&sks=b&skv=2021-08-06&sig=PQ5br37QstIOidolrQPOnbQVnSizVJS2vjyAoQI42wQ%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-LucMQZ0RUfw8zAgrW6a9KXuc.png?st=2023-02-28T11%3A17%3A49Z&se=2023-02-28T13%3A17%3A49Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T12%3A17%3A49Z&ske=2023-03-01T12%3A17%3A49Z&sks=b&skv=2021-08-06&sig=gW1Ln6JZvtMcwnttUIa%2BGxJlS5X/rQh9LgHKJdx2HuQ%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-wUcZag37WEmAfGAPGCHthdn9.png?st=2023-02-28T11%3A18%3A48Z&se=2023-02-28T13%3A18%3A48Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A41%3A25Z&ske=2023-02-28T21%3A41%3A25Z&sks=b&skv=2021-08-06&sig=%2B3b8kKjvBd3MeJBYO1dx55QhkgsA6LchYoRgP4Gphow%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-QXIvseZ6Gny4EbK66rJfcJoz.png?st=2023-02-28T11%3A20%3A13Z&se=2023-02-28T13%3A20%3A13Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T12%3A17%3A11Z&ske=2023-03-01T12%3A17%3A11Z&sks=b&skv=2021-08-06&sig=BKFBKsm9CTPQGGxXA1xEaCw6eajjM7RjVze08kknXm8%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-Eip83wWIfyWK9OygejImDLB3.png?st=2023-02-28T11%3A21%3A02Z&se=2023-02-28T13%3A21%3A02Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T12%3A11%3A22Z&ske=2023-03-01T12%3A11%3A22Z&sks=b&skv=2021-08-06&sig=14CieQDtq/LgtPovIPWuz8ZNPtl6pwrr5V538VUFyAE%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-XQAGw9OYOn21CNLvxP55RPds.png?st=2023-02-28T11%3A22%3A21Z&se=2023-02-28T13%3A22%3A21Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T08%3A38%3A05Z&ske=2023-03-01T08%3A38%3A05Z&sks=b&skv=2021-08-06&sig=CdBZoi65uv0xmxzpzZfzKOo8QFygVz4tzF8fBW259WI%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-VAxub2Wrj02Lft9xnwLfSUXc.png?st=2023-02-28T11%3A23%3A58Z&se=2023-02-28T13%3A23%3A58Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T08%3A56%3A18Z&ske=2023-03-01T08%3A56%3A18Z&sks=b&skv=2021-08-06&sig=HshXb%2BQPL1h0ocrTeHjYCSc4EELoXValOfmZWEyKza8%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-URAXzqSoeuDIe4R2sH9rKtCq.png?st=2023-02-28T11%3A24%3A23Z&se=2023-02-28T13%3A24%3A23Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T08%3A44%3A51Z&ske=2023-03-01T08%3A44%3A51Z&sks=b&skv=2021-08-06&sig=QTeK8PO2COTLm9lcoZTl28UG1T/F6UqtAb9/mMel2fI%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-CoU4EgkHfHViH6KodGgH8sKV.png?st=2023-02-28T11%3A24%3A34Z&se=2023-02-28T13%3A24%3A34Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T08%3A45%3A46Z&ske=2023-03-01T08%3A45%3A46Z&sks=b&skv=2021-08-06&sig=fuVj8feIV4iqZIJ1C0VpDSqPErdFV6mWceO3gLF5VD0%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-tXueuKorbGuxbuBGZO0TZUuA.png?st=2023-02-28T11%3A25%3A18Z&se=2023-02-28T13%3A25%3A18Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A40%3A34Z&ske=2023-02-28T21%3A40%3A34Z&sks=b&skv=2021-08-06&sig=UrzOzE%2BeMSsRNP4cx1ZFrr7Yeu9hx3jvrFTFWl3%2B1v0%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-YsKHxCZ136rGYhb2lOJPQqc9.png?st=2023-02-28T11%3A25%3A38Z&se=2023-02-28T13%3A25%3A38Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A40%3A54Z&ske=2023-02-28T21%3A40%3A54Z&sks=b&skv=2021-08-06&sig=SP7qMUf06%2Bw1szchK%2BYgzdVhFZhBDw8kw2J5NsHfJz0%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-e03AVdsrVWb1TZgE7HVdSXPs.png?st=2023-02-28T11%3A26%3A14Z&se=2023-02-28T13%3A26%3A14Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T08%3A16%3A19Z&ske=2023-03-01T08%3A16%3A19Z&sks=b&skv=2021-08-06&sig=QLcT9A9hpr5JjT83%2B/BgPx7v1JEfCQgqU2tr7CSwwkg%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-rWbGVIFyojYjsyMvv6CRcOhx.png?st=2023-02-28T11%3A28%3A00Z&se=2023-02-28T13%3A28%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T12%3A20%3A59Z&ske=2023-03-01T12%3A20%3A59Z&sks=b&skv=2021-08-06&sig=LXf4TmyiKHTqmRdjEGQKnBiYz44OxR7yk5iNfwpDusY%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-ywTbP7lGUVgzRpZgdz3wtNwq.png?st=2023-02-28T11%3A28%3A52Z&se=2023-02-28T13%3A28%3A52Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A39%3A36Z&ske=2023-02-28T21%3A39%3A36Z&sks=b&skv=2021-08-06&sig=sigYmLp275P0zTFImOyRUuqdYF6G41o0ExCvEi6ThNs%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-FvR6TYplScanG8zO4ypbzHCQ.png?st=2023-02-28T11%3A29%3A23Z&se=2023-02-28T13%3A29%3A23Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-27T21%3A40%3A07Z&ske=2023-02-28T21%3A40%3A07Z&sks=b&skv=2021-08-06&sig=L2B1tJEx1WoAx64qrGm3QctiaRSVJfu4jVUgHEnoNt0%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+https://oaidalleapiprodscus.blob.core.windows.net/private/org-bL9yWSzqV3FBm1fhcf7AjLXy/user-9HwKCcVVBuIrCYE6ESIvXcur/img-LAfScLwJLoAOkPmLOfF7TVLp.png?st=2023-02-28T11%3A30%3A07Z&se=2023-02-28T13%3A30%3A07Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-28T12%3A26%3A25Z&ske=2023-03-01T12%3A26%3A25Z&sks=b&skv=2021-08-06&sig=LqOiavkBRk18xTrgiqfQJ%2BiCNU9UEPp1sLrdsxaDTOk%3D
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+Traceback (most recent call last):
+  File "generate.py", line 2, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>pip install pillow
+Collecting pillow
+  Downloading Pillow-9.4.0-cp38-cp38-win_amd64.whl (2.5 MB)
+     ---------------------------------------- 2.5/2.5 MB 16.0 MB/s eta 0:00:00
+Installing collected packages: pillow
+Successfully installed pillow-9.4.0
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+Traceback (most recent call last):
+  File "generate.py", line 15, in <module>
+    image_url = response['url']
+KeyError: 'url'
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+Traceback (most recent call last):
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_requestor.py", line 669, in _interpret_response_line
+    data = json.loads(rbody)
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "generate.py", line 8, in <module>
+    response = openai.Image.create(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_resources\image.py", line 36, in create
+    response, _, api_key = requestor.request(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_requestor.py", line 226, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_requestor.py", line 619, in _interpret_response
+    self._interpret_response_line(
+  File "C:\Users\dlaiton\AppData\Local\Programs\Python\Python38\lib\site-packages\openai\api_requestor.py", line 671, in _interpret_response_line
+    raise error.APIError(
+openai.error.APIError: HTTP code 502 from API (<html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+)
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+Traceback (most recent call last):
+  File "generate.py", line 16, in <module>
+    image = Image.open(requests.get(image_url, stream=True).raw)
+NameError: name 'requests' is not defined
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>python generate.py
+
+C:\Users\dlaiton\Documents\Dokumente\OpenAI>
+
+
