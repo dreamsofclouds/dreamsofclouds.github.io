@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Working Hours Calculator</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../JS/workinghours.js"></script>
+    <style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			padding: 20px;
+            text-align: center;
+		}
+		h1 {
+			text-align: center;
+			color: #333;
+			margin-bottom: 30px;
+		}
+		label {
+			font-weight: bold;
+			color: #666;
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="time"] {
+			border: 1px solid #ccc;
+			padding: 5px;
+			margin-bottom: 20px;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+			margin-bottom: 20px;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+		#result {
+			font-size: 24px;
+			font-weight: bold;
+			color: #333;
+		}
+	</style>
+</head>
+<body>
+	<h1>Working Hours Calculator</h1>
+    
+	<label for="start">Start Time:</label>
+	<input type="time" id="start"><br>
+
+	<label for="end">End Time:</label>
+	<input type="time" id="end"><br><br>
+
+	<button onclick="calculateWorkingHours()">Calculate Working Hours</button><br><br>
+
+	<div id="result"></div>
+</body>
+</html>
