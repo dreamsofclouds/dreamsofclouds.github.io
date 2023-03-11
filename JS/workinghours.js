@@ -9,10 +9,12 @@ function calculateWorkingHours() {
     var endHour = parseInt(end.split(':')[0]);
     var endMinute = parseInt(end.split(':')[1]);
 
-    var totalMinutes = ((endHour * 60) + endMinute) - ((startHour * 60) + startMinute) - 45;
-    var hours = Math.floor(totalMinutes / 60);
-    var minutes = totalMinutes % 60;
-
+    var totalMinutes = ((endHour * 60) + endMinute) - ((startHour * 60) + startMinute);
+    if(totalMinutes>405){
+        totalMinutes=totalMinutes-45;
+    }
+        var hours = Math.floor(totalMinutes / 60);
+        var minutes = totalMinutes % 60;    
     document.getElementById("result").innerHTML = hours + " hours and " + minutes + " minutes";
 }
 
