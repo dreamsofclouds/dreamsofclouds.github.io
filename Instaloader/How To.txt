@@ -1,0 +1,5 @@
+1.navigate to path where :saved is located. Otherwise :saved will be located here 
+2.RUN "python 615_import_firefox_session.py" to save the cookies session from firefox to instaloader
+3.Open Instagram on Firefox and run the scroll.js in the console
+4.RUN instaloader -l USERNAME :saved (--fast-update)
+5.Dont open Instagram on phone, let instagram on Firefox run for as long as Instaloader is running.
