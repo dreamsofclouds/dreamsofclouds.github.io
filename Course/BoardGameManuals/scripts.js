@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Replace the following array with your actual data (game names and PDF URLs)
     const boardGames = [
         { name: 'Catan', pdfUrl: 'Manuals/Catan.pdf' },
-        { name: 'Scythe', pdfUrl: 'Manuals/Scythe.pdf' },
+        { name: 'Monopoly', pdfUrl: 'Manuals/Monopoly.pdf' },
         // Add more games as needed
     ];
 
@@ -33,15 +33,12 @@ document.addEventListener('DOMContentLoaded', function () {
         manualsList.appendChild(manualItem);
     });
 
-    function generateQRCode(url, element) {
-        // Log the URL to check if it's correct
-        console.log('Generating QR Code for URL:', url);
-    
-        // Create a new QRCode instance
-        const qr = new QRCode(element, {
-            text: url,
-            width: 100, // Adjust the width as needed
-            height: 100, // Adjust the height as needed
+    function generateQRCode(url, qrEl) {
+        console.log('Generating QR Code for URL:', url)
+        var qr = new QRious({
+          element: qrEl,
+          value: url
         });
     }
+
 });
