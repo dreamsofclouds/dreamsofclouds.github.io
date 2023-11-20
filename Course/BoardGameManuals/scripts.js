@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const qrCode = document.createElement('canvas');
         qrCode.className = 'qr-code';
-        generateQRCode(game.pdfUrl, qrCode);
+        generateQRCode(absoluteUrl.href, qrCode);
 
         manualItem.appendChild(gameName);
         manualItem.appendChild(qrCode);
