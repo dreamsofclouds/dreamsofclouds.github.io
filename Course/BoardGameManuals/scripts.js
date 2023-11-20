@@ -16,9 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const gameName = document.createElement('h2');
         
+        // Combine the base URL with the relative path to get the absolute URL
+        const absoluteUrl = new URL(game.pdfUrl, window.location.href);
+
         // Create a link for the game name
         const gameLink = document.createElement('a');
-        gameLink.href = game.pdfUrl; // Link to the PDF
+        gameLink.href = absoluteUrl.href; // Link to the PDF
         gameLink.textContent = game.name;
         gameLink.target = '_blank'; // Open link in a new tab
 
