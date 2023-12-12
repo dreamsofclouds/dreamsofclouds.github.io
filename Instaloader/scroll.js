@@ -22,6 +22,5 @@ function autoScroll() {
   window.scrollTo(0, targetPosition);
 }
 
-const randomInRange = Math.round(Math.random() * (max - min)) + min;
 // Start scrolling automatically with the specified interval
 const scrollInterval = setInterval(autoScroll, Math.random()*15000); // random Interval of 1 to 15 Seconds)
