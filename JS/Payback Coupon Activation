@@ -1,0 +1,6 @@
+javascript: document.querySelector("pb-coupon-center").shadowRoot.querySelectorAll("pbc-coupon").forEach(c => {
+    c?.shadowRoot?.querySelector("pbc-coupon-call-to-action").shadowRoot.querySelector(".not-activated")?.click()
+  });
+  if (confirm("Fertig. Seite neu laden?")) {
+    location.reload();
+  }
